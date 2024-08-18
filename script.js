@@ -92,3 +92,25 @@ function closePopup() {
 // const emailInput = document.querySelector("#email");
 // const mobileInput = document.querySelector("#mobile");
 // const messageInput = document.querySelector("#message"); 
+
+
+//DARK MODE TOGGLER
+// script.js
+const themeSwitch = document.getElementById('theme-switch');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    themeSwitch.checked = true;
+}
+
+themeSwitch.addEventListener('change', function () {
+    document.body.classList.toggle('dark-mode');
+
+    let theme = 'light';
+    if (document.body.classList.contains('dark-mode')) {
+        theme = 'dark';
+    }
+    localStorage.setItem('theme', theme);
+});
+
