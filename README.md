@@ -1,7 +1,7 @@
 # Portfolio
  Buillding an personal portfolio using HTML, CSS and JavaScript.
  Here the deployed link of the portfolio on netlify
- https://comforting-cupcake-08b652.netlify.app/
+ https://portfolio-six-peach-88.vercel.app/
 
 
 
